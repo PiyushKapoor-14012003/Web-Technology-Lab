@@ -6,33 +6,39 @@
     <title>Pranveer Singh Institute of Technology</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #0073e6;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            background-color: #005bb5;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav a {
             color: #fff;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
+            transition: background-color 0.3s;
         }
         nav a:hover {
-            background-color: #555;
+            background-color: #004494;
         }
         .container {
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .department {
             background-color: #fff;
@@ -40,15 +46,31 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .department:hover {
+            transform: translateY(-5px);
         }
         .department h2 {
             margin-top: 0;
+            color: #0073e6;
+        }
+        .department p {
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to XYZ Institute</h1>
+        <h1>Welcome to PSIT</h1>
     </header>
     <nav>
         <a href="#cs">Computer Science</a>
