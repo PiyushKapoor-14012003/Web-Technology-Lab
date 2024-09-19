@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExaminationResults>
+    <Student>
+        <RollNumber>12347</RollNumber>
+        <Name>Rahul</Name>
+        <Subjects>
+            <Subject1>
+                <Name>Mathematics</Name>
+                <Marks>75</Marks>
+            </Subject1>
+            <Subject2>
+                <Name>Science</Name>
+                <Marks>80</Marks>
+            </Subject2>
+            <Subject3>
+                <Name>English</Name>
+                <Marks>85</Marks>
+            </Subject3>
+        </Subjects>
+        <TotalMarks>240</TotalMarks>
+        <Percentage>80.00</Percentage>
+        <Grade>A</Grade>
+    </Student>
+    <Student>
+        <RollNumber>12348</RollNumber>
+        <Name>Shikha</Name>
+        <Subjects>
+            <Subject1>
+                <Name>Mathematics</Name>
+                <Marks>70</Marks>
+            </Subject1>
+            <Subject2>
+                <Name>Science</Name>
+                <Marks>75</Marks>
+            </Subject2>
+            <Subject3>
+                <Name>English</Name>
+                <Marks>80</Marks>
+            </Subject3>
+        </Subjects>
+        <TotalMarks>225</TotalMarks>
+        <Percentage>75.00</Percentage>
+        <Grade>B</Grade>
+    </Student>
+</ExaminationResults>
