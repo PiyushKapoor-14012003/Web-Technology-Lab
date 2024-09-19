@@ -6,8 +6,8 @@
     height: 100px;
     width:100%;
     font-size: 50px;
-    color: red;
-    background-color: #ffb400;
+    color: brown;
+    background-color: #0afaf2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,8 +43,8 @@
     height: 100px;
     width:100%;
     font-size: 50px;
-    color: red;
-    background-color: #ffb400;
+    color: brown;
+    background-color: #0afaf2;
     display: flex;
     justify-content: center;
     align-items: center;
