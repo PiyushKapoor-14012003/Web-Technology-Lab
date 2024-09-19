@@ -42,4 +42,25 @@
         <Percentage>75.00</Percentage>
         <Grade>B</Grade>
     </Student>
+    <Student>
+        <RollNumber>12349</RollNumber>
+        <Name>Shivam</Name>
+        <Subjects>
+            <Subject1>
+                <Name>Mathematics</Name>
+                <Marks>65</Marks>
+            </Subject1>
+            <Subject2>
+                <Name>Science</Name>
+                <Marks>70</Marks>
+            </Subject2>
+            <Subject3>
+                <Name>English</Name>
+                <Marks>75</Marks>
+            </Subject3>
+        </Subjects>
+        <TotalMarks>210</TotalMarks>
+        <Percentage>70.00</Percentage>
+        <Grade>C</Grade>
+    </Student>
 </ExaminationResults>
