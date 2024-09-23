@@ -11,5 +11,5 @@ function createPerson(name, age) {
 const person1 = createPerson('Alice', 30);
 const person2 = createPerson('Bob', 25);
 
-person1.greet(); // Hello, my name is Alice and I am 30 years old.
-person2.greet(); // Hello, my name is Bob and I am 25 years old.
+person1.greet(); 
+person2.greet(); 
