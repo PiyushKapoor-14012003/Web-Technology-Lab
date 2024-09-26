@@ -1,0 +1,125 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>My Responsive Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to My Blog</h2>
+            <p>This is a sample paragraph for the blog section. Here you can write about various topics and share your thoughts.</p>
+        </section>
+        <section>
+            <h2>Latest Posts</h2>
+            <article>
+                <h3>Post Title 1</h3>
+                <p>Summary of the first post...</p>
+            </article>
+            <article>
+                <h3>Post Title 2</h3>
+                <p>Summary of the second post...</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 My Responsive Website</p>
+    </footer>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Blog</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">About</a></li>
+                <li><a href="mailto:support@myblog.com">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Write a New Post</h2>
+            <form id="postForm">
+            <label for="postTitle">Title:</label>
+            <input type="text" id="postTitle" name="postTitle" required>
+            <label for="postContent">Content:</label>
+            <textarea id="postContent" name="postContent" required></textarea>
+            <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="postsSection">
+            <h2>Latest Posts</h2>
+            <article>
+            <h3>Achivement</h3>
+            <pre>
+            🌟 Exciting News! 🌟
+            I’m thrilled to share that I have successfully completed the Google Cybersecurity Professional Certificate on Coursera! 🎓🔐
+            This comprehensive program has equipped me with in-demand skills and hands-on experience in areas such as:
+            Automate Cybersecurity Tasks with Python
+            Foundations of Cybersecurity
+            Put It to Work: Prepare for Cybersecurity Jobs
+            Assets, Threats, and Vulnerabilities
+            Sound the Alarm: Detection and Response
+            Tools of the Trade: Linux and SQL
+            Play It Safe: Manage Security Risks
+            Connect and Protect: Networks and Network Security
+                
+            Throughout this journey, I’ve gained a deeper understanding of cybersecurity practices, risk management, and 
+            how to protect networks, devices, and data from cyber threats. This certification is a significant milestone in my career,
+            and I’m excited to apply these skills to real-world challenges.
+            A big thank you to the instructors and the Coursera team for this incredible learning experience. I’m looking forward to 
+            connecting with fellow professionals and exploring new opportunities in the field of cybersecurity.
+            hashtag#Cybersecurity hashtag#GoogleCertificate hashtag#Coursera hashtag#ProfessionalDevelopment hashtag#LearningJourney</pre>
+            <img src="Screenshot 2024-09-24 123253.png" alt="Achivement" height="60%" width="60%">
+            </article>
+        </section>
+        <script>
+            document.getElementById('postForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const title = document.getElementById('postTitle').value;
+            const content = document.getElementById('postContent').value;
+            
+            const newPost = document.createElement('article');
+            const postTitle = document.createElement('h3');
+            postTitle.textContent = title;
+            const postContent = document.createElement('p');
+            postContent.textContent = content;
+            
+            newPost.appendChild(postTitle);
+            newPost.appendChild(postContent);
+            
+            document.getElementById('postsSection').appendChild(newPost);
+            
+            document.getElementById('postForm').reset();
+            });
+        </script>
+    </main>
+    <footer>
+        <p>© 2024 My Responsive Blog</p>
+    </footer>
+</body>
+</html>
