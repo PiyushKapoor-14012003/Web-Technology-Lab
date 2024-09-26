@@ -25,6 +25,8 @@
             <input type="text" id="postTitle" name="postTitle" required>
             <label for="postContent">Content:</label>
             <textarea id="postContent" name="postContent" required></textarea>
+            <label for="postImage">Upload Image:</label>
+            <input type="file" id="postImage" name="postImage" accept="image/*">
             <button type="submit">Submit</button>
             </form>
         </section>
@@ -56,23 +58,36 @@
         </section>
         <script>
             document.getElementById('postForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            const title = document.getElementById('postTitle').value;
-            const content = document.getElementById('postContent').value;
-            
-            const newPost = document.createElement('article');
-            const postTitle = document.createElement('h3');
-            postTitle.textContent = title;
-            const postContent = document.createElement('p');
-            postContent.textContent = content;
-            
-            newPost.appendChild(postTitle);
-            newPost.appendChild(postContent);
-            
-            document.getElementById('postsSection').appendChild(newPost);
-            
-            document.getElementById('postForm').reset();
+                event.preventDefault();
+                
+                const title = document.getElementById('postTitle').value;
+                const content = document.getElementById('postContent').value;
+                const imageFile = document.getElementById('postImage').files[0];
+                
+                const newPost = document.createElement('article');
+                const postTitle = document.createElement('h3');
+                postTitle.textContent = title;
+                const postContent = document.createElement('p');
+                postContent.textContent = content;
+                
+                newPost.appendChild(postTitle);
+                newPost.appendChild(postContent);
+                
+                if (imageFile) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const postImage = document.createElement('img');
+                        postImage.src = e.target.result;
+                        postImage.alt = title;
+                        postImage.style.maxWidth = '100%';
+                        newPost.appendChild(postImage);
+                    };
+                    reader.readAsDataURL(imageFile);
+                }
+                
+                document.getElementById('postsSection').appendChild(newPost);
+                
+                document.getElementById('postForm').reset();
             });
         </script>
     </main>
