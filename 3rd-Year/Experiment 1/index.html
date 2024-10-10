@@ -3,50 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pranveer Singh Institute Of Technology | PSIT Departments</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pranveer Singh Institute of Technology</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005bb5;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #004494;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .department {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .department:hover {
+            transform: translateY(-5px);
+        }
+        .department h2 {
+            margin-top: 0;
+            color: #0073e6;
+        }
+        .department p {
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-    <div class="header" >
-        <p>Pranveer Singh Institute Of Technology</p>
+    <header>
+        <h1>Welcome to PSIT</h1>
+    </header>
+    <nav>
+        <a href="#cs">Computer Science</a>
+        <a href="#ee">Electrical Engineering</a>
+        <a href="#me">Mechanical Engineering</a>
+    </nav>
+    <div class="container">
+        <section id="cs" class="department">
+            <h2>Department of Computer Science</h2>
+            <p>The Computer Science department focuses on teaching and research in various areas of computing, including algorithms, data structures, artificial intelligence, and cybersecurity.</p>
+        </section>
+        <section id="ee" class="department">
+            <h2>Department of Electrical Engineering</h2>
+            <p>The Electrical Engineering department offers courses and research opportunities in electronics, power systems, telecommunications, and control systems.</p>
+        </section>
+        <section id="me" class="department">
+            <h2>Department of Mechanical Engineering</h2>
+            <p>The Mechanical Engineering department provides education and research in areas such as thermodynamics, fluid mechanics, robotics, and manufacturing processes.</p>
+        </section>
     </div>
-    <marquee behavior="scroll" direction="left" width="95%" height="20px">Google | Amazon | Flipkart | infosys | HP | Microsoft | </marquee>
-    <h1 class="head-about">About US</h1>
-    <div class="about">
-        <p>
-            Since its inception in 2004, Pranveer Singh Institute of Technology (PSIT), 
-            Kanpur has been a frontrunner in the field of education with numerous achievements to its name.
-            PSIT believes in strengthening the foundation of the students. 
-            Academic research based on rigorous pedagogy equips our students to face challenges in the real world.
-            The institute prepares students to be ethical leaders in a diverse and complex world. 
-            PSIT offers various courses in Engineering, Business Management and Computer Applications.
-            All departments, with their dynamic community of students and distinguished faculty,
-            offer premium undergraduate and postgraduate programs. 
-            State of the art facilities and a sprawling 80 acres campus nestled amid sylvan surroundings
-            accelerate the learning process.
-        </p>
-        <img src="OIP.jpg" alt="college">
-    </div>
-
-    <div class="mv">
-        <div>
-            <h2>Mission</h2>
-            <p>
-                To achieve excellence in professional education and create an ecosystem for the holistic development of all stakeholders.
-            </p>
-        </div>
-        <div>
-            <h2>Vision</h2>
-            <p>
-                To provide an environment of effective learning and innovation transforming students into dynamic, responsible, 
-                and productive professionals in their respective fields, who are capable of adapting to the changing needs of the industry and society.
-            </p>
-        </div>
-    </div>
-    <div class="base">
-        <p> <a href="departments.html">Departments in PSIT</a></p>
-    </div>
-    
-    
+    <footer style="text-align: center; margin-top: 20px;">
+        <p>&copy; Piyush Kapoor 2201641720071 </p>
+    </footer>
 </body>
 </html>
