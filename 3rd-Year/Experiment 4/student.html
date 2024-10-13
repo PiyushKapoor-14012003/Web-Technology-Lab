@@ -59,6 +59,11 @@
                 return false;
             }
 
+            var studentIdPattern = /^\d{2}[A-Z]{3}\d{4}$/;
+            if (!studentIdPattern.test(id)) {
+                alert("Please enter a valid student ID");
+                return false;
+            }
             var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
             if (!emailPattern.test(email)) {
                 alert("Please enter a valid email address");
