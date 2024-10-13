@@ -5,3 +5,5 @@ function sum_of_ten(){
     }
     return sum;
 }
+// PPP model
+// Path + port = socket
