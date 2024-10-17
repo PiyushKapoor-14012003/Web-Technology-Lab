@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employees.xsl"?>
+<!DOCTYPE employees SYSTEM "employees.dtd">
+<employees>
+    <employee>
+        <empid>101</empid>
+        <empname>Alice Johnson</empname>
+        <empdesignation>Software Engineer</empdesignation>
+        <empcontact>123-456-7890</empcontact>
+        <empmail>alice.johnson@example.com</empmail>
+        <address>
+            <houseno>12</houseno>
+            <street>Main St</street>
+            <locality>Downtown</locality>
+            <city>Metropolis</city>
+            <state>NY</state>
+        </address>
+    </employee>
+    <employee>
+        <empid>102</empid>
+        <empname>Bob Smith</empname>
+        <empdesignation>Project Manager</empdesignation>
+        <empcontact>234-567-8901</empcontact>
+        <empmail>bob.smith@example.com</empmail>
+        <address>
+            <houseno>34</houseno>
+            <street>2nd Ave</street>
+            <locality>Uptown</locality>
+            <city>Gotham</city>
+            <state>NY</state>
+        </address>
+    </employee>
+    <employee>
+        <empid>103</empid>
+        <empname>Charlie Brown</empname>
+        <empdesignation>Business Analyst</empdesignation>
+        <empcontact>345-678-9012</empcontact>
+        <empmail>charlie.brown@example.com</empmail>
+        <address>
+            <houseno>56</houseno>
+            <street>3rd Blvd</street>
+            <locality>Midtown</locality>
+            <city>Star City</city>
+            <state>CA</state>
+        </address>
+    </employee>
+    <employee>
+        <empid>104</empid>
+        <empname>Diana Prince</empname>
+        <empdesignation>UX Designer</empdesignation>
+        <empcontact>456-789-0123</empcontact>
+        <empmail>diana.prince@example.com</empmail>
+        <address>
+            <houseno>78</houseno>
+            <street>4th St</street>
+            <locality>West End</locality>
+            <city>Central City</city>
+            <state>TX</state>
+        </address>
+    </employee>
+    <employee>
+        <empid>105</empid>
+        <empname>Edward Elric</empname>
+        <empdesignation>Data Scientist</empdesignation>
+        <empcontact>567-890-1234</empcontact>
+        <empmail>edward.elric@example.com</empmail>
+        <address>
+            <houseno>90</houseno>
+            <street>5th Ave</street>
+            <locality>East Side</locality>
+            <city>Smallville</city>
+            <state>KS</state>
+        </address>
+    </employee>
+</employees>
