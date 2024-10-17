@@ -1,0 +1,13 @@
+<!ELEMENT employees (employee+)>
+<!ELEMENT employee (empid, empname, empdesignation, empcontact, empmail, address)>
+<!ELEMENT empid (#PCDATA)>
+<!ELEMENT empname (#PCDATA)>
+<!ELEMENT empdesignation (#PCDATA)>
+<!ELEMENT empcontact (#PCDATA)>
+<!ELEMENT empmail (#PCDATA)>
+<!ELEMENT address (houseno, street, locality, city, state)>
+<!ELEMENT houseno (#PCDATA)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT locality (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
