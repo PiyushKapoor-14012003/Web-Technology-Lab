@@ -21,12 +21,10 @@ function generateRandomPassword(length) {
     password += numbers[Math.floor(Math.random() * numbers.length)];
     password += specialChars[Math.floor(Math.random() * specialChars.length)];
 
-    // Fill the rest of the password length with random characters from all sets
     for (let i = 4; i < length; i++) {
         password += allChars[Math.floor(Math.random() * allChars.length)];
     }
 
-    // Shuffle the password to ensure randomness
     password = password.split('').sort(() => 0.5 - Math.random()).join('');
 
     return password;
